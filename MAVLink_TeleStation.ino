@@ -300,6 +300,8 @@ void loop() {
     } else {
       display.drawBitmap(115, 12, rcCrossedOutBitmap, 12, 10, SH110X_WHITE);
     }
+	// Update the last update time
+    lastUpdateTime = currentMillis;
   }
 
   // Draw the blinking symbol
